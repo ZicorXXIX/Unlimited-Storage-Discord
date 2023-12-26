@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicord Storage</title>
+    <link rel="stylesheet" href="styles.css">
+
+   
+</head>
+<body>
+    <form id="uploadForm" action="" method="post" enctype="multipart/form-data">
+        <input type="file" id="fileInput" name="myFile" />
+        <input type="submit">
+      </form>
+      
+
+</body>
+<script>
+    // document.getElementById("fileInput").addEventListener("submit", (3))
+    document.getElementById("fileInput").addEventListener("change", (e)=>{
+        console.log(e.target.files[0]);
+        // const file = e.target.files[0];
+//    const url = URL.createObjectURL(file);
+//    console.log(`URL: ${url}`);
+    })
+</script>
+</html>
